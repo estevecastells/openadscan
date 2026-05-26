@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 250 250 251;
+  --surface: 255 255 255;
+  --border: 226 232 240;
+  --text: 15 23 42;
+  --muted: 100 116 139;
+  --accent: 79 70 229;
+  --positive: 22 163 74;
+  --warn: 234 179 8;
+  --danger: 220 38 38;
+}
+
+.dark {
+  --bg: 9 11 18;
+  --surface: 17 22 33;
+  --border: 30 41 59;
+  --text: 226 232 240;
+  --muted: 148 163 184;
+  --accent: 129 140 248;
+  --positive: 34 197 94;
+  --warn: 250 204 21;
+  --danger: 248 113 113;
+}
+
+html, body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-family: theme("fontFamily.sans");
+  font-feature-settings: "ss01" on, "cv11" on;
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-xl shadow-soft;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-border bg-surface hover:bg-bg transition;
+  }
+  .btn-primary {
+    @apply btn bg-accent border-accent text-white hover:opacity-90;
+  }
+  .input {
+    @apply w-full px-3 py-2 rounded-md border border-border bg-surface text-text placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent/50;
+  }
+  .label {
+    @apply text-sm font-medium text-text mb-1 block;
+  }
+  .kpi-value {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+  .kpi-label {
+    @apply text-sm text-muted;
+  }
+  .table-default {
+    @apply w-full text-sm;
+  }
+  .table-default thead th {
+    @apply text-left text-muted font-medium px-3 py-2 border-b border-border;
+  }
+  .table-default tbody td {
+    @apply px-3 py-2 border-b border-border;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium border;
+  }
+  .badge-positive {
+    @apply badge text-positive border-positive/30 bg-positive/10;
+  }
+  .badge-warn {
+    @apply badge text-warn border-warn/30 bg-warn/10;
+  }
+  .badge-danger {
+    @apply badge text-danger border-danger/30 bg-danger/10;
+  }
+  .badge-muted {
+    @apply badge text-muted border-border bg-bg;
+  }
+}

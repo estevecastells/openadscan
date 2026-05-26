@@ -1,0 +1,60 @@
+name = "openadscan"
+main = "./dist/index.js"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+# Static assets (built JS/CSS for islands, fonts, demo data)
+[assets]
+directory = "./dist/static"
+binding = "ASSETS"
+
+# Primary database
+[[d1_databases]]
+binding = "DB"
+database_name = "openadscan"
+database_id = "REPLACE_ME"
+migrations_dir = "./migrations"
+
+# Caches: OAuth tokens, SERP responses, daily cost ledger
+[[kv_namespaces]]
+binding = "KV"
+id = "REPLACE_ME"
+
+# Ingestion job fan-out
+[[queues.producers]]
+binding = "INGEST_QUEUE"
+queue = "openadscan-ingest"
+
+[[queues.consumers]]
+queue = "openadscan-ingest"
+max_batch_size = 10
+max_batch_timeout = 5
+max_retries = 3
+dead_letter_queue = "openadscan-ingest-dlq"
+
+# Periodic ingestion + evaluation
+[triggers]
+crons = [
+  "0 */1 * * *",   # GSC + Ads incremental (top of every hour)
+  "0 */6 * * *",   # SERP for brand terms (every 6 hours)
+  "30 2 * * *",    # NKLG + cannibalization + incrementality (daily 02:30 UTC)
+  "*/15 * * * *"   # Alert evaluator
+]
+
+# Non-secret variables. Secrets are set via `wrangler secret put`.
+[vars]
+ADMIN_EMAIL = "admin@example.com"
+PUBLIC_BASE_URL = "https://openadscan.example.workers.dev"
+DATAFORSEO_DAILY_BUDGET_USD = "5.00"
+DEFAULT_LOCALE = "en-US"
+NODE_ENV = "production"
+
+# Secrets to set via `wrangler secret put`:
+#   SESSION_SECRET        — 32+ byte random string, signs session cookies
+#   ENCRYPTION_KEY        — 32-byte hex string, AES-GCM for OAuth tokens at rest
+#   GOOGLE_OAUTH_CLIENT_ID
+#   GOOGLE_OAUTH_CLIENT_SECRET
+#   GOOGLE_ADS_DEVELOPER_TOKEN
+#   RESEND_API_KEY        — optional, falls back to MailChannels if absent
+#   SLACK_WEBHOOK_URL     — optional, only used if Slack channel enabled
