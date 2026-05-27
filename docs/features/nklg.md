@@ -1,6 +1,6 @@
 # NKLG — Negative Keyword List Generator
 
-> *Originally built at [Adevinta](https://www.adevinta.com/) by **Marcin**, **Filippo**, **Esteve** and the rest of the **SAI team**. NKLG is the conceptual core of openadscan — every other module exists to feed it the data it needs.*
+> *Originally built at [Adevinta](https://www.adevinta.com/) by **Marcin**, **Filippo**, **Esteve** and the rest of the **SAI team**. NKLG is the conceptual core of Open AdScan — every other module exists to feed it the data it needs.*
 
 ## The rule
 
@@ -13,7 +13,7 @@ If, for a given branded or near-branded keyword:
 
 then you should **stop paying** for that keyword. Add it to your Google Ads negative keyword list.
 
-The moment a competitor returns (mean density > 0 for ≥ 3 consecutive SERP snapshots on a previously paused term), openadscan flips the decision to **`re_enable`** and fires an alert so you can reactivate paid bidding to defend the SERP.
+The moment a competitor returns (mean density > 0 for ≥ 3 consecutive SERP snapshots on a previously paused term), Open AdScan flips the decision to **`re_enable`** and fires an alert so you can reactivate paid bidding to defend the SERP.
 
 ## Why it works
 

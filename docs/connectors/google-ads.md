@@ -18,7 +18,7 @@ wrangler secret put GOOGLE_ADS_DEVELOPER_TOKEN
 
 ## Connect
 
-`Settings → Connections → Google Ads → Connect`. You'll be redirected to Google for consent, then back. openadscan stores the refresh token AES-GCM-encrypted, and refreshes the access token automatically on every API call.
+`Settings → Connections → Google Ads → Connect`. You'll be redirected to Google for consent, then back. Open AdScan stores the refresh token AES-GCM-encrypted, and refreshes the access token automatically on every API call.
 
 ## What we pull
 

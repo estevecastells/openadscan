@@ -1,6 +1,6 @@
 # Deployment
 
-A complete checklist to ship openadscan to your own Cloudflare account.
+A complete checklist to ship Open AdScan to your own Cloudflare account.
 
 ## 0. Prereqs
 

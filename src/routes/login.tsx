@@ -16,10 +16,10 @@ export const GET = createRoute((c) => {
             <circle cx="11" cy="20" r="3" fill="white" />
             <circle cx="21" cy="12" r="3" fill="white" />
           </svg>
-          <span class="font-semibold tracking-tight text-lg">openadscan</span>
+          <span class="font-semibold tracking-tight text-lg">Open AdScan</span>
         </div>
         <h1 class="text-lg font-semibold mb-1">Sign in</h1>
-        <p class="text-sm text-muted mb-6">Admin access to your openadscan instance.</p>
+        <p class="text-sm text-muted mb-6">Admin access to your Open AdScan instance.</p>
         <input type="hidden" name="next" value={next} />
         <label class="label">Email</label>
         <input name="email" type="email" required class="input mb-3" autocomplete="email" />

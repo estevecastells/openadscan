@@ -17,7 +17,7 @@ export async function sendEmail(env: Bindings, msg: EmailMessage): Promise<void>
         "content-type": "application/json",
       },
       body: JSON.stringify({
-        from: `openadscan <${env.ADMIN_EMAIL}>`,
+        from: `Open AdScan <${env.ADMIN_EMAIL}>`,
         to: msg.to,
         subject: msg.subject,
         text: msg.text,
@@ -33,7 +33,7 @@ export async function sendEmail(env: Bindings, msg: EmailMessage): Promise<void>
     headers: { "content-type": "application/json" },
     body: JSON.stringify({
       personalizations: [{ to: [{ email: msg.to }] }],
-      from: { email: env.ADMIN_EMAIL, name: "openadscan" },
+      from: { email: env.ADMIN_EMAIL, name: "Open AdScan" },
       subject: msg.subject,
       content: [
         { type: "text/plain", value: msg.text },

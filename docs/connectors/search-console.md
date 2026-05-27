@@ -7,7 +7,7 @@
 
 ## Connect
 
-`Settings → Connections → Search Console → Connect`. You consent through Google, openadscan stores the refresh token, then `Settings → Connections` lets you pick which property to ingest.
+`Settings → Connections → Search Console → Connect`. You consent through Google, Open AdScan stores the refresh token, then `Settings → Connections` lets you pick which property to ingest.
 
 ## What we pull
 

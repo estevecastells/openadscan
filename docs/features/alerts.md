@@ -1,6 +1,6 @@
 # Alerts
 
-openadscan watches for six conditions, fires events into `alert_events`, then a 15-minute cron tick dispatches pending events via the configured channel.
+Open AdScan watches for six conditions, fires events into `alert_events`, then a 15-minute cron tick dispatches pending events via the configured channel.
 
 ## Rule types
 

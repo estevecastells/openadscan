@@ -18,7 +18,7 @@ export const GET = createRoute(async (c) => {
             <circle cx="11" cy="20" r="3" fill="white" />
             <circle cx="21" cy="12" r="3" fill="white" />
           </svg>
-          <h1 class="text-xl font-semibold tracking-tight">Welcome to openadscan</h1>
+          <h1 class="text-xl font-semibold tracking-tight">Welcome to Open AdScan</h1>
         </div>
         <p class="text-sm text-muted mb-8">
           One-time setup. We'll create your admin account, your first brand and direct you to the connector setup.

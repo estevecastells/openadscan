@@ -1,6 +1,6 @@
 # Architecture
 
-openadscan is a single Cloudflare Worker with three handlers:
+Open AdScan is a single Cloudflare Worker with three handlers:
 
 - **`fetch`** — HonoX-driven UI + API
 - **`scheduled`** — cron handler that fans work onto a queue

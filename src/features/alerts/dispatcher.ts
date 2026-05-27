@@ -32,7 +32,7 @@ export async function dispatchAllAlerts(env: Bindings): Promise<number> {
         case "email":
           await sendEmail(env, {
             to: row.rule.channelTarget ?? env.ADMIN_EMAIL,
-            subject: `[openadscan] ${row.rule.type}`,
+            subject: `[Open AdScan] ${row.rule.type}`,
             text,
           });
           break;

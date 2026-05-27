@@ -1,4 +1,4 @@
-# Contributing to openadscan
+# Contributing to Open AdScan
 
 Thanks for considering a contribution.
 

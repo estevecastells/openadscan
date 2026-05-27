@@ -12,7 +12,7 @@ The seed of this project is **NKLG — the Negative Keyword List Generator** —
 
 > *If your organic ranking and CTR are strong, and no paid competitors are bidding on the term, stop paying for that keyword. Reactivate paid bidding the moment a competitor returns.*
 
-openadscan generalises that idea into a full platform. The wider framework — measuring the **incrementality** of paid bidding on branded terms versus organic — is documented in the SpeakerDeck *[SEO vs SEM: Final Round](https://speakerdeck.com/estevecastells/seo-vs-sem-final-round-esteve-castells-number-vamostalegon)*.
+Open AdScan generalises that idea into a full platform. The wider framework — measuring the **incrementality** of paid bidding on branded terms versus organic — is documented in the SpeakerDeck *[SEO vs SEM: Final Round](https://speakerdeck.com/estevecastells/seo-vs-sem-final-round-esteve-castells-number-vamostalegon)*.
 
 ---
 
@@ -207,7 +207,7 @@ Issues and PRs welcome. Run `pnpm test`, `pnpm typecheck` and `pnpm lint` before
 
 ## Acknowledgements
 
-- The **Adevinta SAI team** — **Marcin**, **Filippo**, **Esteve** and everyone else who built and ran NKLG before openadscan existed
+- The **Adevinta SAI team** — **Marcin**, **Filippo**, **Esteve** and everyone else who built and ran NKLG before Open AdScan existed
 - The team behind **[Hono](https://hono.dev/)** and **[HonoX](https://github.com/honojs/honox)**
 - **[Drizzle ORM](https://orm.drizzle.team/)**, **[ECharts](https://echarts.apache.org/)**, **[DataForSEO](https://dataforseo.com/)**
 - Everyone who has ever wished their search intelligence platform was just *files in a repo they could read*

@@ -21,7 +21,7 @@ export function Sidebar(props: { current: string; email?: string }) {
           <circle cx="11" cy="20" r="3" fill="white" />
           <circle cx="21" cy="12" r="3" fill="white" />
         </svg>
-        <span class="font-semibold tracking-tight">openadscan</span>
+        <span class="font-semibold tracking-tight">Open AdScan</span>
       </a>
       <nav class="flex-1 px-2 py-3">
         {ITEMS.map((item) => {
