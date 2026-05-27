@@ -42,7 +42,7 @@ export default createRoute(async (c) => {
     <AppShell
       current="/nklg"
       title="Negative Keyword List Generator"
-      subtitle="Originally built at Adevinta with Marcin, Filippo, and the SAI team."
+      subtitle="Originally built at Adevinta by Marcin, Filippo, Esteve and the rest of the SAI team."
     >
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         <KPI label="Pause candidates" value={`${pauseCount}`} tone="positive" />

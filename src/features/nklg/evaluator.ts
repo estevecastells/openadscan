@@ -6,7 +6,7 @@
  *   - keep paying for it                          (organic weak, or competitors active)
  *   - re-enable a previously paused term          (competitor returned)
  *
- * Originally built at Adevinta with Marcin, Filippo, and the SAI team.
+ * Originally built at Adevinta by Marcin, Filippo, Esteve and the rest of the SAI team.
  * See docs/features/nklg.md for the full origin story.
  */
 import { nklgConfidence } from "@/lib/stats";

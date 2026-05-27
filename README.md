@@ -1,14 +1,14 @@
-# openadscan
+# Open AdScan, the free open source alternative to Adthena
 
-**Open-source, self-hosted alternative to Adthena.** Brand presence and SEO/SEM intelligence that you deploy on your own Cloudflare account — no third-party dashboards, no per-seat pricing, no data leaving your tenancy.
+**Self-hosted brand presence and SEO/SEM intelligence** that you deploy on your own Cloudflare account — no third-party dashboards, no per-seat pricing, no data leaving your tenancy.
 
-openadscan pulls from **Google Ads**, **Google Search Console** and **DataForSEO**, merges paid and organic signals, watches your brand SERPs continuously, and produces actionable decisions: pause this paid keyword, defend that one, a new competitor just appeared on your brand term, your organic ranking just dropped.
+Open AdScan pulls from **Google Ads**, **Google Search Console** and **DataForSEO**, merges paid and organic signals, watches your brand SERPs continuously, and produces actionable decisions: pause this paid keyword, defend that one, a new competitor just appeared on your brand term, your organic ranking just dropped.
 
 ---
 
 ## Origin
 
-The seed of this project is **NKLG — the Negative Keyword List Generator** — originally built at **[Adevinta](https://www.adevinta.com/)** by Esteve Castells together with **Marcin**, **Filippo**, and the **SAI team**. NKLG codified a simple but high-leverage rule:
+The seed of this project is **NKLG — the Negative Keyword List Generator** — originally built at **[Adevinta](https://www.adevinta.com/)** by **Marcin**, **Filippo**, **Esteve** and the rest of the **SAI team**. NKLG codified a simple but high-leverage rule:
 
 > *If your organic ranking and CTR are strong, and no paid competitors are bidding on the term, stop paying for that keyword. Reactivate paid bidding the moment a competitor returns.*
 
@@ -207,7 +207,7 @@ Issues and PRs welcome. Run `pnpm test`, `pnpm typecheck` and `pnpm lint` before
 
 ## Acknowledgements
 
-- The **Adevinta SAI team** — **Marcin**, **Filippo** and everyone who built and ran NKLG before openadscan existed
+- The **Adevinta SAI team** — **Marcin**, **Filippo**, **Esteve** and everyone else who built and ran NKLG before openadscan existed
 - The team behind **[Hono](https://hono.dev/)** and **[HonoX](https://github.com/honojs/honox)**
 - **[Drizzle ORM](https://orm.drizzle.team/)**, **[ECharts](https://echarts.apache.org/)**, **[DataForSEO](https://dataforseo.com/)**
 - Everyone who has ever wished their search intelligence platform was just *files in a repo they could read*

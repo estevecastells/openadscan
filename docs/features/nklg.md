@@ -1,6 +1,6 @@
 # NKLG — Negative Keyword List Generator
 
-> *Originally built at [Adevinta](https://www.adevinta.com/) by Esteve Castells together with **Marcin**, **Filippo**, and the **SAI team**. NKLG is the conceptual core of openadscan — every other module exists to feed it the data it needs.*
+> *Originally built at [Adevinta](https://www.adevinta.com/) by **Marcin**, **Filippo**, **Esteve** and the rest of the **SAI team**. NKLG is the conceptual core of openadscan — every other module exists to feed it the data it needs.*
 
 ## The rule
 
